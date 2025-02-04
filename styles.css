@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #f9e6f1;
+  color: #3a3a3a;
+  overflow: hidden;
+  cursor: default;
+}
+
+header h1 {
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 20vh;
+  color: #ff85b3;
+  text-shadow: 2px 2px 5px #ff85b3;
+  cursor: pointer;
+}
+
+header h1:hover {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+#cat-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.cat {
+  width: 10vw;
+  height: 10vw;
+  opacity: 0.8;
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cat:hover {
+  transform: rotate(15deg) scale(1.1);
+  opacity: 1;
+}
+
+.text-box {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 10px 20px;
+  border: 2px dashed #ff85b3;
+  width: 80%;
+}
+
+#ribbon-text {
+  font-size: 2.5vw;
+  color: #ff4d94;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#feedButton {
+  background-color: #ff85b3;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+#feedButton:hover {
+  background-color: #ff4d94;
+}
+
+#catEat-container {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+#catEatImage {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+
+#star-container {
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.star {
+  font-size: 4vw;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* Existing styles */
+
+#cat1:hover {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+#cat2:hover {
+  animation: rotateScale 5s ease-in-out infinite;
+}
+
+@keyframes rotateScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+#cat3:hover {
+  animation: fadeInOut 4s infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#cat4:hover {
+  animation: scaleUpDown 3s infinite alternate;
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#cat5:hover {
+  animation: drift 4s infinite alternate;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(20px) rotate(15deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-15deg);
+  }
+}
+
+#cat6:hover {
+  animation: bounce 1s infinite alternate;
+}
+
+#cat7:hover {
+  animation: fadeRotate 4s infinite alternate;
+}
+
+#cat8:hover {
+  animation: pulseScale 3s infinite alternate;
+}
+
+@keyframes pulseScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#cat9:hover {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#cat10:hover {
+  animation: fadeRotate 4s infinite alternate;
+}
+
+@keyframes fadeRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
