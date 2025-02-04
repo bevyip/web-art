@@ -1,0 +1,111 @@
+body {
+  background-color: #eed9c4;
+}
+
+#meow {
+  position: absolute;
+  color: #eed9c4;
+  background-color: #266e5b;
+  text-shadow: 18px -300px 12px black;
+  border: 60px dotted black;
+  width: 9vw;
+  height: 2700px;
+  right: 600px;
+  top: 300px;
+  font-size: 900px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+#goingto {
+  position: fixed;
+  font-size: 12px;
+  top: 30vh;
+  left: 30vw;
+}
+
+.runofthe {
+  color: rgb(211, 137, 25);
+}
+
+img {
+  border-left: 0.15vw solid rgb(63, 38, 1);
+}
+
+#swayfish {
+  position: absolute;
+  top: 90vh;
+  right: 0px;
+  width: 30vw;
+  height: 90vw;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+#swayfishtwo {
+  position: absolute;
+  top: 600vh;
+  left: -45vw;
+  width: 180vw;
+  height: 45vw;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+#swayfishthree {
+  position: absolute;
+  top: 450vh;
+  left: 45vw;
+  width: 6vw;
+  height: 3vw;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+#blackfish {
+  position: fixed;
+  top: 30vh;
+  z-index: 11;
+  right: -21vw;
+  width: 60vw;
+  height: 60vw;
+  opacity: 0.74;
+}
+
+#blackfishtwo {
+  position: fixed;
+  top: -10vh;
+  z-index: 11;
+  right: -30vw;
+  width: 90vw;
+  height: 45vw;
+  opacity: 0.6;
+}
+
+#blackfishthree {
+  position: fixed;
+  top: -36vh;
+  z-index: 11;
+  left: -30vw;
+  width: 120vw;
+  height: 45vw;
+  opacity: 0.6;
+}
+
+#goldie {
+  position: fixed;
+  bottom: 69vh;
+  z-index: 11;
+  right: 3vw;
+  width: 45vw;
+  height: 18vw;
+  opacity: 0.6;
+}
+
+video {
+  position: absolute;
+  width: 30vw;
+  border-radius: 30% 60% 15% 10%;
+  top: 15vh;
+  left: 6vw;
+}
